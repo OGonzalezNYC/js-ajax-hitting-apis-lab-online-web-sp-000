@@ -68,13 +68,13 @@ function getBranches(el) {
 
 function displayBranches() {
   const branches = JSON.parse(this.responseText);
-  console.log(branches);
+  //console.log(branches);
   const branchesList = `<ul>${branches
   .map(branch => 
   '<li><strong>' + 
   branch.name +
   '</strong>' + 
   '</li>').join('')}</ul>`;
-  console.log(branchesList);
+  //console.log(branchesList);
   document.getElementById('details').innerHTML = branchesList;
 }
